@@ -19,6 +19,10 @@ RUN make && make install
 # Create a non-root user to own the files and run our server
 RUN adduser -D static
 
+# download the ca
+RUN wget https://github.com/CarlosWilk/webDev_CA/archive/main.zip
+RUN unzip main.zip
+
 # Switch to the scratch image
 FROM scratch
 
@@ -35,13 +39,12 @@ USER static
 WORKDIR /home/static
 
 # Uploads a blank default httpd.conf
-# This is only needed in order to set the `-c` argument in this base file
-# and save the developer the need to override the CMD line in case they ever
 # want to use a httpd.conf
 COPY httpd.conf .
 
 # Copy all the files from the previous CA website
-COPY webDev_CA-main .
+COPY html .
 
 # Run busybox httpd
 CMD ["/busybox", "httpd", "-f", "-v", "-p", "8080", "-c", "httpd.conf", "./index.html"]
+
