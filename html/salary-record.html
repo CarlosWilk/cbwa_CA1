@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Carlos Wilker">
+        <meta name="description" content="CA Database + WebDevelopment">
+        <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title> salary-record table </title>
+</head>
+
+<body>
+
+    <table id="salary-record-table">
+        <caption> Salary Records </caption>
+    
+        <thead id="table-header">              
+            <tr>
+                    <!--Reference an icon from Internet as a primary key-->  
+                <th> <img id="primary_key" src="https://www.iconshock.com/image/Impressions/Database/primary_key/" alt="golden key"> Salary_Record_ID <strong> INT</strong></th>
+                <th>Promotion <strong> TINYINT</strong></th>
+                <th>Increase <strong> TINYINT</strong></th>
+                <th>Date <strong> DATE </strong></th>
+                <th> <img id="foreign_key" src="https://www.iconshock.com/image/Brilliant/Database/foreign_key/" alt="silver key"> Salary ID <strong> INT</strong></th>
+                <th> <img id="foreign_key2" src="https://www.iconshock.com/image/Brilliant/Database/foreign_key/" alt="silver key">Employee <strong> INT</strong></th>
+            </tr>
+        </thead>
+
+    <tbody>
+        <tr>
+            <td>00001</td> <!--Salary record ID-->
+            <td>Y</td> <!--Is promotion? Yes or No-->
+            <td>N</td> <!--Is increase? Yes or No-->
+            <td>01/01/1993</td> <!--Date of changes-->
+            <td>00001</td> <!--Salary ID-->
+            <td>00003</td> <!--Employee ID-->
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>00002</td> <!--Salary record ID-->
+            <td>N</td> <!--Is promotion? Yes or No-->
+            <td>Y</td> <!--Is increase? Yes or No-->
+            <td>01/01/2000</td> <!--Date of changes-->
+            <td>00002</td> <!--Salary ID-->
+            <td>00005</td> <!--Employee ID-->
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>00003</td> <!--Salary record ID-->
+            <td>N</td> <!--Is promotion? Yes or No-->
+            <td>N</td> <!--Is increase? Yes or No-->
+            <td>13/05/2021</td> <!--Date of changes-->
+            <td>00001</td> <!--Salary ID-->
+            <td>00006</td> <!--Employee ID-->
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>00004</td> <!--Salary record ID-->
+            <td>N</td> <!--Is promotion? Yes or No-->
+            <td>N</td> <!--Is increase? Yes or No-->
+            <td>13/05/2021</td> <!--Date of changes-->
+            <td>00001</td> <!--Salary ID-->
+            <td>00009</td> <!--Employee ID-->
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>00005</td> <!--Salary record ID-->
+            <td>N</td> <!--Is promotion? Yes or No-->
+            <td>N</td> <!--Is increase? Yes or No-->
+            <td>02/03/2021</td> <!--Date of changes-->
+            <td>00002</td> <!--Salary ID-->
+            <td>00001</td> <!--Employee ID-->
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>00006</td> <!--Salary record ID-->
+            <td>N</td> <!--Is promotion? Yes or No-->
+            <td>Y</td> <!--Is increase? Yes or No-->
+            <td>15/02/2014</td> <!--Date of changes-->
+            <td>00005</td> <!--Salary ID-->
+            <td>00007</td> <!--Employee ID-->
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>00007</td> <!--Salary record ID-->
+            <td>N</td> <!--Is promotion? Yes or No-->
+            <td>N</td> <!--Is increase? Yes or No-->
+            <td>06/02/2018</td> <!--Date of changes-->
+            <td>00009</td> <!--Salary ID-->
+            <td>00008</td> <!--Employee ID-->
+    </tbody>
+    <tbody>
+        <tr>
+            <td>00008</td> <!--Salary record ID-->
+            <td>N</td> <!--Is promotion? Yes or No-->
+            <td>N</td> <!--Is increase? Yes or No-->
+            <td>17/03/2022</td> <!--Date of changes-->
+            <td>00010</td> <!--Salary ID-->
+            <td>00010</td> <!--Employee ID-->
+    </tbody>
+    <tbody>
+        <tr>
+            <td>00009 </td> <!--Salary record ID-->
+            <td>N </td> <!--Is promotion? Yes or No-->
+            <td>Y </td> <!--Is increase? Yes or No-->
+            <td>02/03/2022 </td> <!--Date of changes-->
+            <td>00003</td> <!--Salary ID-->
+            <td>00001</td> <!--Employee ID-->
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>00010 </td> <!--Salary record ID-->
+            <td>Y</td> <!--Is promotion? Yes or No-->
+            <td>N</td> <!--Is increase? Yes or No-->
+            <td>25/07/2002</td> <!--Date of changes-->
+            <td>00008</td> <!--Salary ID-->
+            <td>00003</td> <!--Employee ID-->
+        </tr>
+    </tfoot>
+
+    </table>
+<br>
+    <p><a href="index.html"> Return </a></p>
+
+</body>
+</html>

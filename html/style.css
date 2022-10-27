@@ -1,0 +1,84 @@
+/* Style of the main links on the index page*/
+/*Menu style
+source: https://www.w3schools.com/CSSref/pr_class_float.asp*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+/*Width and heigh of the icons for primary and foreign key*/
+  #primary_key, #foreign_key, #foreign_key2{
+width: 20px;
+height: 20px;
+
+}
+
+/* Change the style of all Return link to the main page*/
+a[href="index.html"]{
+
+    background-color: black;
+    color:white
+    
+}
+
+/*Attributes of the table-header*/
+
+#table-header{
+
+  font-family: 'Times New Roman', Times, serif;
+  font-style:normal
+}
+
+/*changing the color where strong is used*/
+strong{
+
+  color: #616060;
+
+}
+
+/*background color for the head of the tables*/
+#table-header{
+background-color: cornsilk;
+
+}
+
+/*table columns and rows*/
+th, td {
+    border: 1px solid;
+    padding: 5px;
+    ;
+    }
+
+    /*footer style*/
+    footer {
+      position: fixed;bottom:0;left:0;right:0;height:30px;
+      text-align:center;
+      padding: 3px;
+      background-color: DarkSalmon;
+      color: white;
+    } /* Source: https://stackoverflow.com/questions/18739937/how-to-keep-footer-at-bottom-of-screen*/
+
+
+
+
+    
