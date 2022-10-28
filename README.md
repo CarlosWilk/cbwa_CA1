@@ -2,6 +2,8 @@
 
 A very small Docker image (~154KB) to run any static website, based on the [BusyBox httpd](https://www.busybox.net/) static file server.
 
+Download the folder html
+
 Build the image:
 
 ```sh
